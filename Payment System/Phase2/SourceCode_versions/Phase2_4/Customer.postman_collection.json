@@ -1,0 +1,160 @@
+{
+	"info": {
+		"_postman_id": "d6497edc-434d-4ccb-956e-ce76e47dd1c7",
+		"name": "Customer",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24966113"
+	},
+	"item": [
+		{
+			"name": "Sign Up",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Username\":\"Hager\",\r\n    \"Password\":\"3\",\r\n    \"Email\":\"H.@com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/User",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"User"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sign In",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/User/Username=Hager/Password=3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"User",
+						"Username=Hager",
+						"Password=3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create New Refund Transaction",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/Refund Transaction/Create/10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Refund Transaction",
+						"Create",
+						"10"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Pay by Wallet Payment",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/Pay by Wallet Payment/Amount=5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Pay by Wallet Payment",
+						"Amount=5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Amount To Wallet",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/Add To Wallet/Amount=20",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Add To Wallet",
+						"Amount=20"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Pay by CreditCard Payment",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/Pay by CreditCard Payment/Amount=10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Pay by CreditCard Payment",
+						"Amount=10"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/Search by Name of Services/Mob",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Search by Name of Services",
+						"Mob"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

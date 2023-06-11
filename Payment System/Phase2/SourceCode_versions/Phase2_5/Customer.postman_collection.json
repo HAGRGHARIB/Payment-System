@@ -1,0 +1,242 @@
+{
+	"info": {
+		"_postman_id": "d6497edc-434d-4ccb-956e-ce76e47dd1c7",
+		"name": "Customer",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24966113"
+	},
+	"item": [
+		{
+			"name": "Sign Up",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Username\":\"Hager\",\r\n    \"Password\":\"3\",\r\n    \"Email\":\"H.@com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/User/SignUp",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"User",
+						"SignUp"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sign In",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/User/SignIn/Username=Hager/Password=3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"User",
+						"SignIn",
+						"Username=Hager",
+						"Password=3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create New Refund Transaction",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/Refund Transaction/Create/100",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Refund Transaction",
+						"Create",
+						"100"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Amount To Wallet",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/Add To Wallet/Amount=20",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Add To Wallet",
+						"Amount=20"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/Search by Name of Services/Mob",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Search by Name of Services",
+						"Mob"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SignOut",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/User/SignOut",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"User",
+						"SignOut"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Pay For Donations/{Provider_Services_Name}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/Donations/Cancer Hospital/Amount=10/Phonenumber:01234567/Payment:CreditCard",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Donations",
+						"Cancer Hospital",
+						"Amount=10",
+						"Phonenumber:01234567",
+						"Payment:CreditCard"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Pay For Mobile Recharge Services/{Provider_Services_Name}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/Mobile Recharge Services/We/Amount=10/Phonenumber:01234567/Payment:Wallet",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Mobile Recharge Services",
+						"We",
+						"Amount=10",
+						"Phonenumber:01234567",
+						"Payment:Wallet"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Pay For Landline Services/{Provider_Services_Name}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/Landline Services/Monthly Receipt/Amount=10/Phonenumber:01234567/Payment:CreditCard",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Landline Services",
+						"Monthly Receipt",
+						"Amount=10",
+						"Phonenumber:01234567",
+						"Payment:CreditCard"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Pay For Internet Payment Services/{Provider_Services_Name}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/Internet Payment Services/We/Amount=10/Phonenumber:01234567/Payment:Wallet",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Internet Payment Services",
+						"We",
+						"Amount=10",
+						"Phonenumber:01234567",
+						"Payment:Wallet"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Exit",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
